@@ -1,0 +1,297 @@
+@font-face {
+    font-family: "banner-font";
+    src: url(fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+}
+
+body {
+    background: #5D737E;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'banner-font';
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #007BFF;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 2em;
+}
+
+nav ul li {
+    margin: 1.4em;
+    display: inline-block;
+}
+
+/* removes button decoration */
+nav button {
+    padding: 1em;
+    all: unset;
+    cursor: pointer;
+}
+
+nav ul li button {
+    padding: 1em;
+    all: unset;
+    cursor: pointer;
+}
+
+section.main {
+    background-image: url(images/sport-banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 20em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'banner-font';
+}
+
+#banner {
+    font-size: 5em;
+    color: #dd2d27;
+}
+
+#dropdown {
+    display: none;
+    margin-right: 1em;
+}
+
+#home {
+    margin-right: auto;
+}
+
+section.page {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 3em 5em 3em 5em;
+    background-color: #005ec3;
+}
+
+section.page .left-align {
+    width: 25%;
+    padding-right: 20px;
+}
+
+section.page .left-align img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+section.page .right-align {
+    width: 75%;
+}
+
+section#page5 {
+    height: 20em;
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+}
+
+footer {
+    margin: 1em;
+}
+
+#cup1 {
+    position: absolute;
+    left: 30em;
+    top: 37em;
+    width: 10em;
+}
+
+#cup2 {
+    position: absolute;
+    left: 30em;
+    top: 36em;
+    width: 10em;
+}
+
+#cup3 {
+    position: absolute;
+    left: 30em;
+    top: 35em;
+    width: 10em;
+}
+
+#cup4 {
+    position: absolute;
+    left: 30em;
+    top: 34em;
+    width: 10em;
+}
+
+#cup5 {
+    position: absolute;
+    left: 30em;
+    top: 33em;
+    width: 10em;
+}
+
+#cup6 {
+    position: absolute;
+    left: 30em;
+    top: 32em;
+    width: 10em;
+}
+
+#source a {
+    text-decoration: none;
+    color: black;
+}
+
+footer ol li {
+    margin: 1em;
+}
+
+@media (max-width:800px) {
+
+    /*hide the menu item list*/
+    nav ul {
+        display: none;
+    }
+
+    /*make a menu items vertical*/
+    nav ul li {
+        display: block;
+    }
+
+    /* unhide menu icon */
+    #dropdown {
+        display: block;
+    }
+
+    #banner {
+        text-align: center;
+        font-size: 3em;
+    }
+
+    #home {
+        display: block;
+        margin: 0em auto;
+    }
+
+    section.main {
+        background-image: url(images/sport-banner.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 11em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-family: 'banner-font';
+    }
+
+    section.page {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3em 5em;
+        text-align: center;
+    }
+
+    section.page .left-align {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 1em;
+    }
+
+    section.page .left-align img {
+        width: 75%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    section.page .right-align {
+        width: 100%;
+    }
+
+    #page5 {
+        padding: 0em;
+    }
+
+    #home {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .cup {
+        position: absolute;
+        touch-action: none;
+        user-select: none;
+    }
+
+    #cup1 {
+        position: absolute;
+        left: 13em;
+        top: 28em;
+        width: 5em;
+    }
+
+    #cup2 {
+        position: absolute;
+        left: 13em;
+        top: 27em;
+        width: 5em;
+    }
+
+    #cup3 {
+        position: absolute;
+        left: 13em;
+        top: 26em;
+        width: 5em;
+    }
+
+    #cup4 {
+        position: absolute;
+        left: 5em;
+        top: 28em;
+        width: 5em;
+    }
+
+    #cup5 {
+        position: absolute;
+        left: 5em;
+        top: 27em;
+        width: 5em;
+    }
+
+    #cup6 {
+        position: absolute;
+        left: 5em;
+        top: 26em;
+        width: 5em;
+    }
+
+    #qrcode {
+        display: none;
+    }
+}
+
+.menuShow {
+    display: block;
+}
